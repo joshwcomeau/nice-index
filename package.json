@@ -5,7 +5,7 @@
   "description": "Show directory names instead of `index.js`.",
   "repository": {
     "type": "git",
-    "url": "https://github.com/joshwcomeau/atom-nice-index"
+    "url": "https://github.com/joshwcomeau/nice-index"
   },
   "keywords": [
     "atom",
@@ -23,7 +23,7 @@
     "atom": ">=1.0.0 <2.0.0"
   },
   "bugs": {
-    "url": "https://github.com/joshwcomeau/atom-nice-index/issues"
+    "url": "https://github.com/joshwcomeau/nice-index/issues"
   },
-  "homepage": "https://github.com/joshwcomeau/atom-nice-index"
+  "homepage": "https://github.com/joshwcomeau/nice-index"
 }
