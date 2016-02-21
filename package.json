@@ -1,0 +1,29 @@
+{
+  "name": "nice-index",
+  "main": "./lib/nice-index",
+  "version": "0.0.0",
+  "description": "Show directory names instead of `index.js`.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshwcomeau/atom-nice-index"
+  },
+  "keywords": [
+    "atom",
+    "tabs",
+    "rename",
+    "title",
+    "filename",
+    "pane",
+    "index",
+    "javascript"
+  ],
+  "author": "Joshua Comeau",
+  "license": "MIT",
+  "engines": {
+    "atom": ">=1.0.0 <2.0.0"
+  },
+  "bugs": {
+    "url": "https://github.com/joshwcomeau/atom-nice-index/issues"
+  },
+  "homepage": "https://github.com/joshwcomeau/atom-nice-index"
+}
