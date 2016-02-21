@@ -27,7 +27,7 @@ In Atom, this means your files will look something like this:
 
 ![Sample pane files](http://i.imgur.com/GDexok8.jpg)
 
-This is not good!
+This is not good! All the filenames are the same. Atom tries to be helpful by showing the directory name after the filename, but with a reasonable amount of files open, it's completely obfuscated and untenable.
 
 ### There must be a better way...
 
@@ -44,7 +44,7 @@ This way, we get the best of both worlds. We can use this lovely pattern...
 import Home from './components/Home'
 
 // Less good
-import Home from './components/Home/index.jsx'
+import Home from './components/Home/home.jsx'
 ```
 
 ...AND we get very clear filenames when developing :)
