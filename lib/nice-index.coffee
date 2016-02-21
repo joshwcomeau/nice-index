@@ -35,7 +35,7 @@ module.exports = NiceIndex =
 
     elements.forEach (el) =>
       # Match `index.js` and `index.jsx`
-      if el.getAttribute('data-name').match(/^index.js/)
+      if el.getAttribute('data-name')?.match(/^index.js/)
         el.innerText = '/' + @getDirectoryName(el)
       else
         el.innerText = el.getAttribute('data-name')
