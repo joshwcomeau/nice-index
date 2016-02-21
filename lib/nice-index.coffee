@@ -23,7 +23,7 @@ module.exports = NiceIndex =
 
     @subscriptions.add atom.workspace.onDidOpen(@renameTabs)
 
-    @renameTabs()
+    setTimeout @renameTabs, 1234
 
 
   deactivate: ->
