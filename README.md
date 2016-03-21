@@ -31,7 +31,7 @@ This is not good! All the filenames are the same. Atom tries to be helpful by sh
 
 ### There must be a better way...
 
-What if, specifically for `index.js` and `index.jsx` files, we always just showed the parent directory? Something like:
+What if for all `index.*` files, we always just showed the parent directory? Something like:
 
 ![Better pane files](http://i.imgur.com/gM88FOR.png)
 
