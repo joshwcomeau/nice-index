@@ -1,9 +1,24 @@
 Atom Nice Index
 ================
 
+An Atom package that automatically renames index.* files to their parent directory name.
+
+```
+about/index.html  -> /about
+Home/index.jsx    -> /Home
+server/index.js   -> /server
+```
+
+
+### Why?
+
 It's common practice, in web development, to give your directories semantically-relevant names, but to give the primary file the name of `index.js`, `index.html`, `index.css`, etc.
 
-Here's an example structure from a React app:
+Web servers like apache will, by default, automatically try and serve index.html or index.php files when you request a directory. So, `http://www.google.com/` will attempt to serve `http://www.google.com/index.html`. This allows us to hide the file extension from the user, and provide nicer URLs.
+
+In Node.js and ES2015 Javascript imports, this same convention was adopted. You can `require` or `import` a path like `/components/Home`, and it will attempt to find an `index.*` file within it.
+
+The end result is that a lot of projects are packed with files like `index.js`, `index.html`, `index.css`, etc. Here's an example structure from a React app:
 
 ```
 .
@@ -34,19 +49,7 @@ Wouldn't it be nicer if, for all `index.*` files, we just showed the parent dire
 
 ![Better pane files](/img/after.png "After")
 
-We prefix the file name with `/` so we know it's the directory's name, and we show the much-more-relevant name.
-
-This way, we get the best of both worlds. We can structure our files in the nicer way...
-
-```js
-// Good
-import Home from './components/Home'
-
-// Less good
-import Home from './components/Home/home.jsx'
-```
-
-...AND we get very clear filenames when developing :)
+This way, we get the best of both worlds. We get semantically meaningful tab names in Atom while developing, and we can still reap all the benefits of using the index.* convention.
 
 
 Acknowledgements
