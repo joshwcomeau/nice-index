@@ -1,7 +1,7 @@
 {
   "name": "nice-index",
   "main": "./lib/nice-index",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "description": "Show directory names instead of `index.js`.",
   "repository": {
     "type": "git",
