@@ -37,9 +37,6 @@ module.exports = NiceIndex =
       # Match any `index.` file
       if el.getAttribute('data-name')?.match(/^index.*/)
         el.innerText = '/' + @getDirectoryName(el)
-      else
-        el.innerText = el.getAttribute('data-name')
-
 
   getDirectoryName: (el) ->
     dir = path.dirname el.getAttribute('data-path')
