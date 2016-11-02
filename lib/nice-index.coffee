@@ -5,6 +5,15 @@ path = require('path')
 module.exports = NiceIndex =
   subscriptions: null
 
+  config:
+    fileNames:
+      type: 'array'
+      default: [
+        'index.*'
+      ]
+      description: "Regex patterns of file names to match"
+      items:
+        type: 'string'
 
   activate: (state) ->
     @subscriptions = new CompositeDisposable
@@ -33,9 +42,12 @@ module.exports = NiceIndex =
   renameTabs: ->
     elements = @getElementsArray 'li.tab .title'
 
+    fileNames = atom.config.get('nice-index.fileNames')
+    regex = new RegExp('^' + fileNames.join('|'))
+
     elements.forEach (el) =>
       # Match any `index.` file
-      if el.getAttribute('data-name')?.match(/^index.*/)
+      if el.getAttribute('data-name')?.match(regex)
         el.innerText = '/' + @getDirectoryName(el)
 
   getDirectoryName: (el) ->
