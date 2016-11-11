@@ -9,7 +9,7 @@ module.exports = NiceIndex =
     fileNames:
       type: 'array'
       default: [
-        'index.*'
+        'index\\.'
       ]
       description: "Regex patterns of file names to match"
       items:
@@ -43,7 +43,7 @@ module.exports = NiceIndex =
     elements = @getElementsArray 'li.tab .title'
 
     fileNames = atom.config.get('nice-index.fileNames')
-    regex = new RegExp('^' + fileNames.join('|'))
+    regex = new RegExp('^(' + fileNames.join('|') + ')')
 
     elements.forEach (el) =>
       # Match any `index.` file
