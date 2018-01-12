@@ -9,6 +9,9 @@ Home/index.jsx    -> /Home
 server/index.js   -> /server
 ```
 
+## NOTE: This project is seeking maintainers.
+As the primary author, I no longer use Atom (switched to VS Code), and so it no longer makes sense for me to maintain this project. If anyone would like to inherit this project, please let me know!
+
 
 ### Why?
 
